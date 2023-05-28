@@ -1,5 +1,5 @@
 const higherOrderFunc = param => {
-    param();
+    console.log(param());
     return `I just invoked ${param.name} as a callback function!`
   }
    
@@ -7,8 +7,8 @@ const higherOrderFunc = param => {
     return 'I\'m being invoked by the higher-order function!';
   }
    
-  higherOrderFunc(anotherFunc);
-
+console.log(higherOrderFunc(anotherFunc));
+/*
 
   higherOrderFunc(() => {
     for (let i = 0; i <= 10; i++){
@@ -31,4 +31,4 @@ const higherOrderFunc = param => {
   
   console.log(checkConsistentOutput(addTwo, 10));
 
-  
+  */
